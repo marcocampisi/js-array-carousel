@@ -14,3 +14,14 @@ upButton.addEventListener('click',
         carouselImages[activeIndex].classList.add("active");
     }
 );
+
+downButton.addEventListener('click',
+    function() {
+        carouselImages[activeIndex].classList.remove("active");
+        activeIndex++;
+        if (activeIndex >= carouselImages.length) {
+            activeIndex = 0;
+        }
+        carouselImages[activeIndex].classList.add("active");
+    }
+);
