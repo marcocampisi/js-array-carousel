@@ -17,6 +17,9 @@ for (let i = 0; i < images.length; i++) {
     image.className = "carouselImage";
     image.src = images[i];
     carouselImagesContainer.appendChild(image);
+    if (i === 0) {
+        image.classList.add("active");
+    }
 }
 
 upButton.addEventListener('click',
